@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Support Agent Assistant",
+  "version": "0.1.0",
+  "description": "A Chrome extension to improve support agent workflow",
+  "permissions": ["sidePanel", "storage"],
+  "side_panel": {
+    "default_path": "index.html"
+  },
+  "background": {
+    "service_worker": "src/background.ts",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "Open Support Agent Assistant"
+  }
+}
